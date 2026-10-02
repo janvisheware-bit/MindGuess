@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MindGuess</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="memoryArea">
+
+            <h3>🧠 What MindGuess Knows</h3>
+
+            <p id="memoryList"></p>
+
+        </div>
+
+        <h1>MindGuess</h1>
+
+        <!-- Start screen -->
+        <div id="startScreen">
+
+            <p>Think of something in your mind.</p>
+
+            <button id="startButton">Start Game</button>
+
+        </div>
+
+
+        <!-- Game screen -->
+        <div id="gameScreen">
+
+            <h2 id="questionText"></h2>
+
+
+            <!-- Answer buttons -->
+            <div id="answerArea" class="answers">
+
+                <button class="answerButton" data-answer="yes">
+                    Yes
+                </button>
+
+                <button class="answerButton" data-answer="no">
+                    No
+                </button>
+
+                <button class="answerButton" data-answer="maybe">
+                    Maybe
+                </button>
+
+            </div>
+
+
+            <!-- Guess controls -->
+            <div id="guessControls">
+
+                <button id="correctButton">
+                    Yes, correct!
+                </button>
+
+                <button id="wrongButton">
+                    No, wrong guess
+                </button>
+
+            </div>
+
+
+            <!-- Learning area -->
+            <div id="learningArea" style="display: none;">
+
+                <p>What were you thinking of?</p>
+
+                <input
+                    id="newThingInput"
+                    type="text"
+                    placeholder="Enter the answer"
+                >
+
+                <button id="learnButton">
+                    Teach MindGuess
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
